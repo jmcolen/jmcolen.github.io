@@ -1,0 +1,41 @@
+body{
+    background-image:
+
+}
+h1{
+    color: black;
+
+}
+.maroon-text{
+    color: maroon;
+    font-size: xx-large;
+}
+.pink-text{
+    color:pink;
+    font-size: xx-large;
+    .image-container {
+        text-align: center; /* Center the image horizontally */
+    }
+    .inline-image {
+        display: inline-block;
+        margin: 10px; /* Add margin to create some spacing between images */
+    }
+    
+    }
+    
+
+.palevioletred-text{
+    color: palevioletred;
+    font-size: xx-large;
+}
+.cornflowerblue-text{
+    color:cornflowerblue;
+    font-size: xx-large;
+}
+container{
+    width: 200px;
+    height: 100px;
+    overflow: scroll;
+
+}
+
