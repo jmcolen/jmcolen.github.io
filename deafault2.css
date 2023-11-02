@@ -77,5 +77,13 @@ h1{
     border-style: solid;
     border-width: 15px;
     border-color:brown;
+    font-size: 140%;
 
+}
+#six{
+    position:absolute; top: 2350px; left: 1050px;
+    font-size: 130%;
+    font-weight: 300;
+    
+    
 }
