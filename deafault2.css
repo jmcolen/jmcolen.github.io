@@ -13,7 +13,7 @@ h1{
 .pink-text{
     color:pink;
     font-size: xx-large;
-    .image-container {
+     {
         text-align: center; /* Center the image horizontally */
     }
     .inline-image {
