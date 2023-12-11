@@ -73,6 +73,18 @@ tw-link{
 }
 #pic11{
   position: absolute; top: 100px; left:150px;
+}
+#pic12{
+  position: absolute; top: 20px; left:150px;
+}
+#pic13{
+  position: absolute; top: 100px; left:150px;
+}
+#pic14{
+  position: absolute; top: 100px; left:150px;
+}
+#pic15{
+  position: absolute; top: 100px; left:150px;
 }</style><script role="script" id="twine-user-script" type="text/twine-javascript"></script><tw-passagedata pid="1" name="Start" tags="" position="400,100" size="100,100">Hello! Welcome to the intergalatic space mail delivery service or the ISMD for short. You are the new hire, with a mission to deliver packages far and wide. First Step you will need to choose your spaceship. Each ship has its pros and cons, so choose wisely.
 
 [[USS Observer]]
@@ -211,11 +223,9 @@ Okay! Where to first?
 [[Mars]]</tw-passagedata><tw-passagedata pid="13" name="placing them back carefully" tags="" position="100,600" size="100,100">{
 (if: $hoursAsleep &lt;3)[The damages were not that bad. You fixed all of them in less than three hours! Are you ready to head [[out]]?]
 (else-if: $hoursAsleep &gt;= 3)[The damages were horrible! You took a long time and now you are running late! Are you ready to head [[out]]?]
-}</tw-passagedata><tw-passagedata pid="14" name="Check the engine" tags="" position="800,300" size="100,100">Engine looks fine to me. I think you should head out now. Where to first?
-
-[[Venus]]
-[[Mars]]
-</tw-passagedata><tw-passagedata pid="15" name="Venus" tags="" position="500,900" size="100,100">&lt;div id=&quot;pic1&quot;&gt;
+}</tw-passagedata><tw-passagedata pid="14" name="Check the engine" tags="" position="800,300" size="100,100">Engine looks a little strange... .
+do you want to 
+[[Lean in closer]] or [[Keep moving]]</tw-passagedata><tw-passagedata pid="15" name="Venus" tags="" position="500,900" size="100,100">&lt;div id=&quot;pic1&quot;&gt;
 &lt;img src= &quot;https://jmcolen.github.io/clown.png&quot; width=&quot;600&quot; length=&quot;400&quot; height=&quot;600&quot;&gt;
 &lt;/div&gt;
 Oh no! You have encountered aliens that have blocked your path.
@@ -264,14 +274,22 @@ Once you think you have fixed the damages, its time to [[go]]
 &lt;div id=&quot;#pic4&quot;&gt;
 &lt;img src=&quot;https://jmcolen.github.io/book.png&quot; width=&quot;600&quot; length=&quot;500&quot; height=&quot;600&quot;&gt;
 &lt;/div&gt;
-</tw-passagedata><tw-passagedata pid="24" name="Mail Station" tags="" position="275,1225" size="100,100">Good job, you successfully dropped the packages off at the mailstation. Now, drop off the rest of the mail at [[mars]]</tw-passagedata><tw-passagedata pid="25" name="Government building" tags="" position="400,1225" size="100,100">The government building thought you were an intruder and shot your space ship down. You have failed to complete the mission. 
+</tw-passagedata><tw-passagedata pid="24" name="Mail Station" tags="" position="275,1225" size="100,100">Good job, you successfully dropped the packages off at the mailstation. Now, drop off the rest of the mail at [[mars]]
+
+&lt;div id=&quot;#pic15&quot;&gt;
+&lt;img src=&quot;https://jmcolen.github.io/Face.png&quot; width=&quot;600&quot; length=&quot;600&quot; height=&quot;600&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="25" name="Government building" tags="" position="400,1225" size="100,100">The government building thought you were an intruder and shot your space ship down. You have failed to complete the mission. 
 #You are fired!
 
 &lt;div id=&quot;#pic5&quot;&gt;
 &lt;img src=&quot;https://jmcolen.github.io/alien.png&quot; width=&quot;800&quot; length=&quot;600&quot; height=&quot;500&quot;&gt;
 &lt;/div&gt;
 
-</tw-passagedata><tw-passagedata pid="26" name="Someone&#39;s house" tags="" position="525,1225" size="100,100">Not the right place, but the homeowner took it to the mail station for you. Now, drop off the rest of the mail at [[mars]]</tw-passagedata><tw-passagedata pid="27" name="go" tags="" position="100,1225" size="100,100">{
+</tw-passagedata><tw-passagedata pid="26" name="Someone&#39;s house" tags="" position="525,1225" size="100,100">Not the right place, but the homeowner took it to the mail station for you. Now, drop off the rest of the mail at [[mars]]
+
+&lt;div id=&quot;#pic14&quot;&gt;
+&lt;img src=&quot;https://jmcolen.github.io/scary.png&quot; width=&quot;600&quot; length=&quot;600&quot; height=&quot;600&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="27" name="go" tags="" position="100,1225" size="100,100">{
 (if: $repair &lt;3)[The damages were not that bad. You fixed all of them in less than three hours! Are you ready to get [[moving]]]
 (else-if: $repair &gt;= 3)[You fixed all the damages, but it took a long time. you need to get [[moving]]]
 }
@@ -296,7 +314,9 @@ Now it is time to complete the mission. You have made it to Mars. where do you w
 [[On the ground]]
 [[Mail Box]]</tw-passagedata><tw-passagedata pid="31" name="Post office" tags="" position="1100,1050" size="100,100">Good job, you successfully dropped the packages off at Mars. Now, drop off the rest of the mail at [[Venus]]
 
-</tw-passagedata><tw-passagedata pid="32" name="On the ground" tags="" position="1100,1200" size="100,100">You placed the packages on the ground, but then someone stole them and they never made it to their final destination. You have failed to complete the mission. 
+&lt;div id=&quot;#pic13&quot;&gt;
+&lt;img src=&quot;https://jmcolen.github.io/woman.png&quot; width=&quot;600&quot; length=&quot;600&quot; height=&quot;600&quot;&gt;
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="32" name="On the ground" tags="" position="1100,1200" size="100,100">You placed the packages on the ground, but then someone stole them and they never made it to their final destination. You have failed to complete the mission. 
 #You are fired!</tw-passagedata><tw-passagedata pid="33" name="Mail Box" tags="" position="1100,900" size="100,100">Good job, you successfully dropped the packages off at Mars. Now, drop off the rest of the mail at [[Venus]]
 
 &lt;div id=&quot;#pic6&quot;&gt;
@@ -317,7 +337,16 @@ You have successfully dropped off all the packages successfully! Good job. Now g
 
 &lt;div id=&quot;#pic10&quot;&gt;
 &lt;img src=&quot;https://jmcolen.github.io/brain.png&quot; width=&quot;600&quot; length=&quot;600&quot; height=&quot;600&quot;&gt;
-&lt;/div&gt;</tw-passagedata></tw-storydata>
+&lt;/div&gt;</tw-passagedata><tw-passagedata pid="37" name="Lean in closer" tags="" position="1000,200" size="100,100">&lt;div id=&quot;#pic12&quot;&gt;
+&lt;img src=&quot;https://jmcolen.github.io/jump.png&quot; width=&quot;500&quot; length=&quot;600&quot; height=&quot;600&quot;&gt;
+&lt;/div&gt;
+The engine exploded. Your ship and you obliterated into thin air. Nice going!
+#You are Fired!
+</tw-passagedata><tw-passagedata pid="38" name="Keep moving" tags="" position="875,100" size="100,100"> Okay. The engine is strange but I think you should be fine. However, I think you should head out now. Where to first?
+
+[[Venus]]
+[[Mars]]
+</tw-passagedata></tw-storydata>
 <script title="Twine engine code" data-main="harlowe">(function(){"use strict";
 var require,define;!function(){var e={},r={};require=function(i){var n=e[i];return n&&(r[i]=n[1].apply(void 0,n[0].map(require)),e[i]=void 0),r[i]},(define=function(r,i,n){if("function"==typeof r)return r();e[r]=[i,n]}).amd=!0}();/*!
  * https://github.com/paulmillr/es6-shim
